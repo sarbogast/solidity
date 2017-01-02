@@ -4,6 +4,7 @@ Features:
  * Compiler Interface: Contracts and libraries can be referenced with a `file:` prefix to make them unique.
  * AST: Use deterministic node identifiers.
  * Metadata: Do not include platform in the version number.
+ * Type checker: Allow multiple events of the same name (but with different arities or argument types)
 
 ### 0.4.8 (2017-01-13)
 
@@ -25,7 +26,6 @@ Features:
  * Code generator: Inject the Swarm hash of a metadata file into the bytecode.
  * Code generator: Replace expensive memcpy precompile by simple assembly loop.
  * Optimizer: Some dead code elimination.
- * Type checker: Allow multiple events of the same name (but with different arities or argument types)
 
 Bugfixes:
  * Code generator: throw if calling the identity precompile failed during memory (array) copying.
